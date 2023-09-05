@@ -5,5 +5,6 @@ This project includes
 - Spring Security 6
 - Open API
 - Swagger UI
-- H2 Database
+- ~~H2 Database~~
 - Java 17
+- MySql Database
