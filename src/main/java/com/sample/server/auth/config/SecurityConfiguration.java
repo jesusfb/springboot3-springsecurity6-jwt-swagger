@@ -34,9 +34,7 @@ public class SecurityConfiguration {
                                 "/api/v1/docs",
                                 "/api/v1/docs/**",
                                 "/swagger-ui/**",
-                                "/swagger-ui/",
-                                "/**",
-                                "/swagger-ui").permitAll().anyRequest().authenticated()
+                                "/swagger-ui/").permitAll().anyRequest().authenticated()
                 )
                 .sessionManagement(manager -> manager.sessionCreationPolicy(STATELESS))
                 .authenticationProvider(authenticationProvider()).addFilterBefore(
